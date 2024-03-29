@@ -1,0 +1,30 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int a, b;
+
+        Console.WriteLine("Nhập giá trị của a: ");
+        a = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Nhập giá trị của b: ");
+        b = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("\nTrước khi tráo đổi:");
+        Console.WriteLine("a = " + a);
+        Console.WriteLine("b = " + b);
+
+        // Tráo đổi giá trị của a và b bằng XOR
+        a = a ^ b;
+        b = a ^ b;
+        a = a ^ b;
+
+        Console.WriteLine("\nSau khi tráo đổi:");
+        Console.WriteLine("a = " + a);
+        Console.WriteLine("b = " + b);
+
+        Console.ReadLine();
+    }
+}
